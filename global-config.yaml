@@ -57,7 +57,13 @@ logging:
             transitionAfter: 365
         noncurrentVersionTransitions:
           - storageClass: GLACIER_IR
-            transitionAfter: 365          
+            transitionAfter: 365  
+  sharedServicesBucket:
+  bucketName: "my-landingzone-data-bucket"
+  region: "us-east-1" 
+  accessControl: "Private" 
+                      
 tags: []
 iamRoleSsmParameters: []
+
 
