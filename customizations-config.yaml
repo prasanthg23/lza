@@ -2,7 +2,7 @@ customizations:
   cloudFormationStacks:
     - deploymentTargets:
         accounts:
-          - Log Archive
+          - LogArchive
       description: Sample stack description
       name: Custom-S3-Stack
       regions:
