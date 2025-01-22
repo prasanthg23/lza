@@ -3,4 +3,27 @@ defaultVpc:
   excludeAccounts: []
 transitGateways: []
 endpointPolicies: []
-vpcs: []
+vpcs:
+  - name: Network-Endpoints
+    account: Audit
+    region: us-east-1
+    cidrs:
+      - 10.1.0.0/22
+    internetGateway: false
+    enableDnsHostnames: true
+    enableDnsSupport: true
+    instanceTenancy: default
+    interfaceEndpoints:
+      central: false
+      defaultPolicy: Default
+      privateDnsEnabled: false
+      subnets:
+        - Network-Endpoints-A
+        - Network-Endpoints-B
+      endpoints:
+        - service: ec2
+        - service: ec2messages
+        - service: ssm
+        - service: ssmmessages
+        - service: kms
+        - service: log
