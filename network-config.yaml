@@ -15,11 +15,9 @@ vpcs:
     instanceTenancy: default
     interfaceEndpoints:
       central: false
-      defaultPolicy: Default
+      defaultPolicy: []
       privateDnsEnabled: false
-      subnets:
-        - Network-Endpoints-A
-        - Network-Endpoints-B
+      subnets: []
       endpoints:
         - service: ec2
         - service: ec2messages
