@@ -15,6 +15,7 @@ vpcs:
     instanceTenancy: default
     interfaceEndpoints:
       central: false
+      defaultPolicy: Default
       privateDnsEnabled: false
       subnets: []
       endpoints:
