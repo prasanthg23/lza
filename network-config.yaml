@@ -13,15 +13,15 @@ vpcs:
     enableDnsHostnames: true
     enableDnsSupport: true
     instanceTenancy: default
-    interfaceEndpoints:
-      central: false
-      defaultPolicy: Default
-      privateDnsEnabled: false
-      subnets: []
-      endpoints:
-        - service: ec2
-        - service: ec2messages
-        - service: ssm
-        - service: ssmmessages
-        - service: kms
-        - service: log
+    # interfaceEndpoints:
+    #   central: false
+    #   defaultPolicy: Default
+    #   privateDnsEnabled: false
+    #   subnets: []
+    #   endpoints:
+    #     - service: ec2
+    #     - service: ec2messages
+    #     - service: ssm
+    #     - service: ssmmessages
+    #     - service: kms
+    #     - service: log
