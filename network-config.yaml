@@ -23,6 +23,5 @@ vpcs:
       endpoints:
         - service: ec2
         - service: ec2messages
-        - service: ssm
         - service: ssmmessages
         - service: kms
