@@ -26,4 +26,3 @@ vpcs:
         - service: ssm
         - service: ssmmessages
         - service: kms
-        - service: log
