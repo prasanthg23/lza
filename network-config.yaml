@@ -19,11 +19,11 @@ defaultVpc:
 #####################################
 transitGateways:
   - name: Network-Main
-    account: Network
+    account: Audit
     region: *HOME_REGION
-    shareTargets:
-      organizationalUnits:
-        - Security
+    # shareTargets:
+    #   organizationalUnits:
+    #     - Security
     asn: 65521
     dnsSupport: enable
     vpnEcmpSupport: enable
@@ -58,7 +58,7 @@ endpointPolicies:
 #####################################
 vpcs:
   - name: Network-Endpoints
-    account: Network
+    account: Audit
     region: *HOME_REGION
     cidrs:
       - 10.1.0.0/22
@@ -116,7 +116,7 @@ vpcs:
       - name: Network-Endpoints
         transitGateway:
           name: Network-Main
-          account: Network
+          account: Audit
         routeTableAssociations:
           - Network-Main-Shared
         routeTablePropagations:
@@ -145,7 +145,7 @@ vpcs:
         - service: kms
         - service: logs
   - name: Network-Inspection
-    account: Network
+    account: Audit
     region: *HOME_REGION
     cidrs:
       - 10.2.0.0/22
@@ -207,7 +207,7 @@ vpcs:
       - name: Network-Inspection
         transitGateway:
           name: Network-Main
-          account: Network
+          account: Audit
         options:
           applianceModeSupport: enable
         routeTableAssociations:
@@ -226,7 +226,7 @@ vpcs:
         - service: dynamodb
     useCentralEndpoints: true
   - name: SharedServices-Main
-    account: SharedServices
+    account: Audit
     region: *HOME_REGION
     cidrs:
       - 10.4.0.0/16
@@ -280,7 +280,7 @@ vpcs:
       - name: SharedServices-Main
         transitGateway:
           name: Network-Main
-          account: Network
+          account: Audit
         routeTableAssociations:
           - Network-Main-Shared
         routeTablePropagations:
