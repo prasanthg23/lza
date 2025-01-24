@@ -132,7 +132,7 @@ vpcs:
         - service: s3
         - service: dynamodb
     interfaceEndpoints:
-      central: true
+      central: false
       defaultPolicy: Default
       privateDnsEnabled: false
       subnets:
