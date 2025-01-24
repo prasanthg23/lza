@@ -134,7 +134,7 @@ vpcs:
     interfaceEndpoints:
       central: true
       defaultPolicy: Default
-      privateDnsEnabled: false
+      privateDnsEnabled: true
       subnets:
         - Network-Endpoints-A
         - Network-Endpoints-B
