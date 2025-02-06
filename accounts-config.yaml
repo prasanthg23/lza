@@ -23,4 +23,12 @@ mandatoryAccounts:
     email: psanthg+auditlza@amazon.com
     organizationalUnit: Security
     warm: false
-workloadAccounts: []
+workloadAccounts: 
+  - name: labtestaccntlza
+    description: >-
+      The management (primary) account. Do not change the name field for this
+      mandatory account. Note, the account name key does not need to match the
+      AWS account name.
+    email: psanthg+labtestlzactmaster@amazon.com
+    organizationalUnit: Infrastructure
+    warm: false
