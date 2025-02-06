@@ -38,5 +38,5 @@ workloadAccounts:
       mandatory account. Note, the account name key does not need to match the
       AWS account name.
     email: psanthg+lambdatest@amazon.com
-    organizationalUnit: testlambda
+    organizationalUnit: Infrastructure
     warm: false  
