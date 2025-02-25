@@ -39,4 +39,4 @@ workloadAccounts:
       AWS account name.
     email: psanthg+lambdatest@amazon.com
     organizationalUnit: testlambda
-    warm: true  
+    warm: false  
