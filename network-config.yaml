@@ -40,6 +40,7 @@ transitGateways:
       - name: Network-Main-Standalone
         routes: []
       - name: testing-route
+        existing: true
         routes: []
 
 #####################################
