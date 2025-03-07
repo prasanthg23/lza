@@ -39,6 +39,8 @@ transitGateways:
         routes: []
       - name: Network-Main-Standalone
         routes: []
+      - name: testing-route
+        routes: []
 
 #####################################
 # Endpoint policies -- use this     #
