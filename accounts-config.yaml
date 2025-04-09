@@ -40,3 +40,19 @@ workloadAccounts:
     email: psanthg+lambdatest@amazon.com
     organizationalUnit: testlambda
     warm: false  
+  - name: s3test
+    description: >-
+      The management (primary) account. Do not change the name field for this
+      mandatory account. Note, the account name key does not need to match the
+      AWS account name.
+    email: psanthg+s3lock@amazon.com
+    organizationalUnit: Infrastructure
+    warm: false  
+  - name: s3test2
+    description: >-
+      The management (primary) account. Do not change the name field for this
+      mandatory account. Note, the account name key does not need to match the
+      AWS account name.
+    email: psanthg+s3lock2@amazon.com
+    organizationalUnit: Infrastructure
+    warm: false  
