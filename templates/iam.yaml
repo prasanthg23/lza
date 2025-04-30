@@ -1,0 +1,17 @@
+Resources:
+  MyIAMRole:
+    Type: 'AWS::IAM::Role'
+    Properties:
+      RoleName: testlocalpsanth
+      Description: 'IAM Role with Customer Managed Policy'
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: 
+                - ec2.amazonaws.com  # You can modify the service as per your requirement
+            Action:
+              - 'sts:AssumeRole'
+      Path: '/'
+  
