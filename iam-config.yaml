@@ -1,5 +1,12 @@
-providers: []
 policySets: []
-roleSets: []
+roleSets:
+  - deploymentTargets:
+      organizationalUnits:
+        - Root
+    roles:
+      - name: testlocalpsanth
+        policies:
+          customerManaged:
+            - CFNUsers
 groupSets: []
 userSets: []
