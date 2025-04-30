@@ -11,6 +11,9 @@ roleSets:
         - Root
     roles:
       - name: testlocalpsanth
+        assumedBy:
+          - type: service
+            principal: ec2.amazonaws.com
         policies:
           customerManaged:
             - CFNUsers
