@@ -1,0 +1,13 @@
+Resources:
+ Type: 'AWS::IAM::Policy'
+ Properties:
+   PolicyName: CFNUsers
+   PolicyDocument:
+     Version: "2012-10-17"
+     Statement:
+       - Effect: Allow
+         Action:
+           - 'cloudformation:Describe*'
+           - 'cloudformation:List*'
+           - 'cloudformation:Get*'
+         Resource: '*'
