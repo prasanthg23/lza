@@ -11,9 +11,7 @@ roleSets:
         - LogArchive
     roles:
       - name: testlocalpsanth
-        assumedBy:
-          - type: service
-            principal: ec2.amazonaws.com
+        assumedBy: []
         policies:
           customerManaged:
             - CFNUsers
