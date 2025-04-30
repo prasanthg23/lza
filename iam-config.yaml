@@ -7,8 +7,8 @@ policySets:
           policy: templates/policy.yaml
 roleSets:
   - deploymentTargets:
-      organizationalUnits:
-        - Root
+      accounts:
+        - LogArchive
     roles:
       - name: testlocalpsanth
         assumedBy:
