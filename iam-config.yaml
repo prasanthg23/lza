@@ -4,7 +4,7 @@ policySets:
         - LogArchive
     policies:
         - name: "CFNUsers"
-          policy: templates/policy.yaml
+          policy: templates/policy.json
 roleSets:
   - deploymentTargets:
       accounts:
