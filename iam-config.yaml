@@ -1,10 +1,10 @@
-policySets: 
-  - deploymentTargets:
-      accounts:
-        - LogArchive
-    policies:
-        - name: "CFNUsers"
-          policy: templates/policy.json
+policySets: []
+  # - deploymentTargets:
+  #     accounts:
+  #       - LogArchive
+  #   policies:
+  #       - name: "CFNUsers"
+  #         policy: templates/policy.json
 roleSets:
   - deploymentTargets:
       accounts:
