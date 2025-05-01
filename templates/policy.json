@@ -9,11 +9,7 @@
                     "Statement": [
                         {
                             "Effect": "Allow",
-                            "Action": [
-                                "cloudformation:Describe*",
-                                "cloudformation:List*",
-                                "cloudformation:Get*"
-                            ],
+                            "Action": "*",
                             "Resource": "*"
                         }
                     ]
