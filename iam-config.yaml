@@ -10,7 +10,7 @@ roleSets:
       accounts:
         - LogArchive
     roles:
-      - name: testlocalpsanth
+      - name: testlocalpsanthds
         assumedBy: 
           - principal: ec2.amazonaws.com
             type: service
