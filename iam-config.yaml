@@ -1,10 +1,10 @@
 policySets: []
-  # - deploymentTargets:
-  #     accounts:
-  #       - LogArchive
-  #   policies:
-  #       - name: "CFNUsers"
-  #         policy: templates/policy.yaml
+  - deploymentTargets:
+      accounts:
+        - LogArchive
+    policies:
+        - name: "CFNUsers"
+          policy: templates/policy.yaml
 roleSets: []
   # - deploymentTargets:
   #     accounts:
