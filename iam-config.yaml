@@ -1,21 +1,21 @@
-policySets:
-  - deploymentTargets:
-      accounts:
-        - LogArchive
-    policies:
-        - name: "CFNUsers"
-          policy: templates/policy.yaml
-roleSets:
-  - deploymentTargets:
-      accounts:
-        - LogArchive
-    roles:
-      - name: testlocalpsanthds
-        assumedBy: 
-          - principal: ec2.amazonaws.com
-            type: service
-        policies:
-          customerManaged:
-            - CFNUsers
+policySets: []
+  # - deploymentTargets:
+  #     accounts:
+  #       - LogArchive
+  #   policies:
+  #       - name: "CFNUsers"
+  #         policy: templates/policy.yaml
+roleSets: []
+  # - deploymentTargets:
+  #     accounts:
+  #       - LogArchive
+  #   roles:
+  #     - name: testlocalpsanthds
+  #       assumedBy: 
+  #         - principal: ec2.amazonaws.com
+  #           type: service
+  #       policies:
+  #         customerManaged:
+  #           - CFNUsers
 groupSets: []
 userSets: []
