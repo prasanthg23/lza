@@ -17,7 +17,7 @@ customizations:
       name: Custom-S355-Stack
       regions:
         - us-east-1
-      runOrder: 1
+      runOrder: 2
       template: templates/iam.yaml
       terminationProtection: false    
     - deploymentTargets:
@@ -27,6 +27,6 @@ customizations:
       name: Custom-S355policy-Stack
       regions:
         - us-east-1
-      runOrder: 1
+      runOrder: 3
       template: templates/policy.json
       terminationProtection: false      
