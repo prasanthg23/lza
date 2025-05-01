@@ -20,3 +20,13 @@ customizations:
       runOrder: 1
       template: templates/iam.yaml
       terminationProtection: false    
+    - deploymentTargets:
+        accounts:
+          - LogArchive
+      description: Sample stack description
+      name: Custom-S355policy-Stack
+      regions:
+        - us-east-1
+      runOrder: 1
+      template: templates/policy.json
+      terminationProtection: false      
