@@ -5,17 +5,17 @@ policySets: []
   #   policies:
   #       - name: "CFNUsers"
   #         policy: templates/policy.json
-roleSets:
-  - deploymentTargets:
-      accounts:
-        - LogArchive
-    roles:
-      - name: testlocalpsanth
-        assumedBy: 
-          - principal: ec2.amazonaws.com
-            type: service
-        policies:
-          customerManaged:
-            - CFNUsers
+roleSets: []
+  # - deploymentTargets:
+  #     accounts:
+  #       - LogArchive
+  #   roles:
+  #     - name: testlocalpsanth
+  #       assumedBy: 
+  #         - principal: ec2.amazonaws.com
+  #           type: service
+  #       policies:
+  #         customerManaged:
+  #           - CFNUsers
 groupSets: []
 userSets: []
