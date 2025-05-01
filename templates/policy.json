@@ -4,12 +4,17 @@
             "Type": "AWS::IAM::Policy",
             "Properties": {
                 "PolicyName": "CFNUsers",
+                "Roles": testlocalpsanth,
                 "PolicyDocument": {
                     "Version": "2012-10-17",
                     "Statement": [
                         {
                             "Effect": "Allow",
-                            "Action": ["*"],
+                            "Action": [
+                                "cloudformation:Describe*",
+                                "cloudformation:List*",
+                                "cloudformation:Get*"
+                            ],
                             "Resource": "*"
                         }
                     ]
