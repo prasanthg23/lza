@@ -2,8 +2,9 @@ Resources:
   MyIAMRole:
     Type: 'AWS::IAM::Role'
     Properties:
-      RoleName: testlocalpsanth
+      RoleName: testlocalpsanth01
       Description: 'IAM Role with Customer Managed Policy'
+      ManagedPolicyArns: arn:aws:iam::aws:policy/AmazonAppFlowReadOnlyAccess
       AssumeRolePolicyDocument:
         Version: '2012-10-17'
         Statement:
