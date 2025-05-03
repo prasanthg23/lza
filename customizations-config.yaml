@@ -14,7 +14,7 @@ customizations:
         accounts:
           - LogArchive
       description: Sample stack description
-      name: Custom-S355-Stack
+      name: Custom-iam-Stack
       regions:
         - us-east-1
       runOrder: 2
@@ -24,7 +24,7 @@ customizations:
         accounts:
           - LogArchive
       description: Sample stack description
-      name: Custom-S355policy-Stack
+      name: Custom-policy-Stack
       regions:
         - us-east-1
       runOrder: 3
