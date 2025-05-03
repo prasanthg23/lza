@@ -4,7 +4,8 @@ Resources:
     Properties:
       RoleName: testlocalpsanth01
       Description: 'IAM Role with Customer Managed Policy'
-      ManagedPolicyArns: arn:aws:iam::aws:policy/AmazonAppFlowReadOnlyAccess
+      ManagedPolicyArns: 
+         - arn:aws:iam::aws:policy/AmazonAppFlowReadOnlyAccess
       AssumeRolePolicyDocument:
         Version: '2012-10-17'
         Statement:
