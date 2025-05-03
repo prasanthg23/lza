@@ -4,7 +4,7 @@
             "Type": "AWS::IAM::Policy",
             "Properties": {
                 "PolicyName": "CFNUsers",
-                "Roles": ["testlocalpsanth01"],
+                "Roles": ["testlocalpsanth02"],
                 "PolicyDocument": {
                     "Version": "2012-10-17",
                     "Statement": [
