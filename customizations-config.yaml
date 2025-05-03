@@ -14,19 +14,20 @@ customizations:
         accounts:
           - LogArchive
       description: Sample stack description
-      name: Custom-iam-Stack
+      name: Custom-policy01-Stack
+      regions:
+        - us-east-1
+      runOrder: 3
+      template: templates/policy.json
+      terminationProtection: false     
+    - deploymentTargets:
+        accounts:
+          - LogArchive
+      description: Sample stack description
+      name: Custom-iam01-Stack
       regions:
         - us-east-1
       runOrder: 2
       template: templates/iam.yaml
       terminationProtection: false    
-    - deploymentTargets:
-        accounts:
-          - LogArchive
-      description: Sample stack description
-      name: Custom-policy-Stack
-      regions:
-        - us-east-1
-      runOrder: 3
-      template: templates/policy.json
-      terminationProtection: false      
+     
