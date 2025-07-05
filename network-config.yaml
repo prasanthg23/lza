@@ -35,8 +35,8 @@ transitGateways:
         routes: []
       # - name: Network-Main-Segregated
       #   routes: []
-      # - name: Network-Main-Shared
-      #   routes: []
+      - name: Network-Main-Shared
+        routes: []
       # - name: Network-Main-Standalone
       #   routes: []
 
@@ -117,11 +117,11 @@ vpcs:
         transitGateway:
           name: Network-Main
           account: Audit
-        routeTableAssociations: []
-          # - Network-Main-Shared
+        routeTableAssociations:
+          - Network-Main-Shared
         routeTablePropagations:
           - Network-Main-Core
-          # - Network-Main-Shared
+          - Network-Main-Shared
           # - Network-Main-Segregated
         subnets:
           - Network-EndpointsTgwAttach-A
@@ -211,11 +211,11 @@ vpcs:
           account: Audit
         options:
           applianceModeSupport: enable
-        routeTableAssociations: []
-          # - Network-Main-Shared
+        routeTableAssociations:
+          - Network-Main-Shared
         routeTablePropagations:
           - Network-Main-Core
-          # - Network-Main-Shared
+          - Network-Main-Shared
           # - Network-Main-Segregated
         subnets:
           - Network-InspectionTgwAttach-A
@@ -282,11 +282,11 @@ vpcs:
         transitGateway:
           name: Network-Main
           account: Audit
-        routeTableAssociations: []
-          # - Network-Main-Shared
+        routeTableAssociations:
+          - Network-Main-Shared
         routeTablePropagations:
           - Network-Main-Core
-          # - Network-Main-Shared
+          - Network-Main-Shared
           # - Network-Main-Segregated
         subnets:
           - SharedServices-MainTgwAttach-A
