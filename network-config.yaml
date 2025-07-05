@@ -117,12 +117,12 @@ vpcs:
         transitGateway:
           name: Network-Main
           account: Audit
-        routeTableAssociations:
-          - Network-Main-Shared
+        routeTableAssociations: []
+          # - Network-Main-Shared
         routeTablePropagations:
           - Network-Main-Core
-          - Network-Main-Shared
-          - Network-Main-Segregated
+          # - Network-Main-Shared
+          # - Network-Main-Segregated
         subnets:
           - Network-EndpointsTgwAttach-A
           - Network-EndpointsTgwAttach-B
@@ -211,12 +211,12 @@ vpcs:
           account: Audit
         options:
           applianceModeSupport: enable
-        routeTableAssociations:
-          - Network-Main-Shared
+        routeTableAssociations: []
+          # - Network-Main-Shared
         routeTablePropagations:
           - Network-Main-Core
-          - Network-Main-Shared
-          - Network-Main-Segregated
+          # - Network-Main-Shared
+          # - Network-Main-Segregated
         subnets:
           - Network-InspectionTgwAttach-A
           - Network-InspectionTgwAttach-B
@@ -282,12 +282,12 @@ vpcs:
         transitGateway:
           name: Network-Main
           account: Audit
-        routeTableAssociations:
-          - Network-Main-Shared
+        routeTableAssociations: []
+          # - Network-Main-Shared
         routeTablePropagations:
           - Network-Main-Core
-          - Network-Main-Shared
-          - Network-Main-Segregated
+          # - Network-Main-Shared
+          # - Network-Main-Segregated
         subnets:
           - SharedServices-MainTgwAttach-A
           - SharedServices-MainTgwAttach-B
