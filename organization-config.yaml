@@ -3,7 +3,7 @@ organizationalUnits:
   - name: Security
   - name: Infrastructure
   - name: testlambda
-    # ignore: true
+    ignore: true
 serviceControlPolicies: []
 taggingPolicies: []
 backupPolicies: []
