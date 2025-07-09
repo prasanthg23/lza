@@ -4,6 +4,8 @@ organizationalUnits:
   - name: Infrastructure
   - name: testlambda
     ignore: true
+  - name: Orphaned
+    ignore: true  
 serviceControlPolicies: []
 taggingPolicies: []
 backupPolicies: []
